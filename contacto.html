@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATLAS | Contacto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-wrapper {
+            padding: 8rem 5% 5rem;
+            display: flex;
+            gap: 4rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: var(--c-crema);
+        }
+        .contact-info {
+            flex: 1;
+        }
+        .contact-info h1 {
+            font-size: 3rem;
+            color: var(--c-cafe);
+            margin-bottom: 1.5rem;
+        }
+        .info-item {
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 1.1rem;
+        }
+        .info-item i {
+            color: var(--c-dorado);
+            font-size: 1.5rem;
+        }
+        .contact-form {
+            flex: 1;
+            background: white;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-family: inherit;
+        }
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 1rem;
+            background-color: var(--c-carbon);
+            color: var(--c-crema);
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .submit-btn:hover {
+            background-color: var(--c-dorado);
+        }
+        @media (max-width: 768px) {
+            .contact-wrapper {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo"><img src="assets/logo/logo.png" alt="ATLAS Logo"></a>
+        <div class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="pedidos.html">Pedidos</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+    </nav>
+
+    <section class="contact-wrapper fade-in">
+        <div class="contact-info">
+            <h1>Hablemos</h1>
+            <p style="margin-bottom: 2rem;">¿Tienes una consulta, sugerencia o quieres saber más sobre nuestros eventos especiales? Escríbenos.</p>
+            
+            <div class="info-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                    <strong>Dirección</strong><br>
+                    Hipólito Yrigoyen 1304
+                </div>
+            </div>
+            <div class="info-item">
+                <i class="fa-brands fa-whatsapp"></i>
+                <div>
+                    <strong>Teléfono</strong><br>
+                    +54 9 11 1234-5678
+                </div>
+            </div>
+            <div class="info-item">
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                    <strong>Email</strong><br>
+                    hola@atlaspanycafe.com
+                </div>
+            </div>
+        </div>
+        
+        <div class="contact-form">
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Nombre completo</label>
+                    <input type="text" id="name" name="name" required placeholder="Tu nombre">
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" required placeholder="¿En qué podemos ayudarte?"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 ATLAS | Pan y Café. Todos los derechos reservados.</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+:root {
+  /* Paleta de Colores ATLAS */
+  --c-carbon: #1A1A1A;
+  --c-crema: #FAF7F2;
+  --c-arena: #E8DFD1;
+  --c-dorado: #C8A96E;
+  --c-oliva: #8B9A6B;
+  --c-cafe: #5C3D2E;
+  
+  /* Tipografías */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--c-crema);
+  color: var(--c-carbon);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  color: var(--c-carbon);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(250, 247, 242, 0.9);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo img {
+  height: 50px;
+  object-fit: contain;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.nav-links a:hover {
+  color: var(--c-dorado);
+}
+
+/* Hero Section */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 6rem 5% 2rem;
+  background: linear-gradient(rgba(26, 26, 26, 0.4), rgba(26, 26, 26, 0.4)), url('../assets/images/4983380962653703596.jpg') center/cover no-repeat;
+  color: var(--c-crema);
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: var(--c-crema);
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero p {
+  font-size: 1.25rem;
+  font-style: italic;
+  font-family: var(--font-heading);
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background-color: var(--c-dorado);
+  color: var(--c-crema);
+  font-weight: 600;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  border: 1px solid var(--c-dorado);
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: var(--c-dorado);
+}
+
+/* Sección Quiénes Somos */
+.about {
+  padding: 5rem 5%;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  background-color: var(--c-crema);
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--c-dorado);
+}
+
+.about-image {
+  flex: 1;
+  position: relative;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Productos Destacados */
+.featured {
+  padding: 5rem 5%;
+  background-color: var(--c-arena);
+  text-align: center;
+}
+
+.featured h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: var(--c-cafe);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: var(--c-crema);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+.card-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--c-carbon);
+}
+
+/* Ubicación y Contacto */
+.location {
+  position: relative;
+  min-height: 70vh;
+  background: url('../assets/images/4983380962653703628.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 5rem 10%;
+}
+
+.contact-card {
+  background: rgba(250, 247, 242, 0.85);
+  backdrop-filter: blur(15px);
+  padding: 3rem;
+  border-radius: 12px;
+  max-width: 400px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.contact-card h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--c-carbon);
+}
+
+.contact-card p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.contact-card .icon {
+  color: var(--c-dorado);
+  margin-right: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: var(--c-carbon);
+  color: var(--c-crema);
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Simplificación temporal para móvil */
+  }
+  .about {
+    flex-direction: column;
+  }
+  .location {
+    justify-content: center;
+    padding: 2rem 5%;
+  }
+  .hero h1 {
+    font-size: 3rem;
+  }
+}

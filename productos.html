@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATLAS | Productos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .page-header {
+            padding: 8rem 5% 4rem;
+            text-align: center;
+            background-color: var(--c-arena);
+        }
+        .page-header h1 {
+            font-size: 3rem;
+            color: var(--c-cafe);
+        }
+        .gallery-container {
+            padding: 4rem 5%;
+            background-color: var(--c-crema);
+        }
+        .masonry {
+            column-count: 3;
+            column-gap: 1.5rem;
+        }
+        .masonry-item {
+            break-inside: avoid;
+            margin-bottom: 1.5rem;
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .masonry-item img {
+            width: 100%;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+        .masonry-item:hover img {
+            transform: scale(1.05);
+        }
+        @media (max-width: 900px) {
+            .masonry { column-count: 2; }
+        }
+        @media (max-width: 600px) {
+            .masonry { column-count: 1; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo"><img src="assets/logo/logo.png" alt="ATLAS Logo"></a>
+        <div class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="pedidos.html">Pedidos</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+    </nav>
+
+    <header class="page-header fade-in">
+        <h1>Nuestros Productos</h1>
+        <p>Artesanía, sabor y exclusividad en cada creación.</p>
+    </header>
+
+    <section class="gallery-container fade-in-scroll">
+        <div class="masonry">
+            <div class="masonry-item"><img src="assets/images/4983380962653703561.jpg" alt="Producto ATLAS"></div>
+            <div class="masonry-item"><img src="assets/images/4983380962653703566.jpg" alt="Producto ATLAS"></div>
+            <div class="masonry-item"><img src="assets/images/4983380962653703567.jpg" alt="Producto ATLAS"></div>
+            <div class="masonry-item"><img src="assets/images/4983380962653703568.jpg" alt="Producto ATLAS"></div>
+            <div class="masonry-item"><img src="assets/images/4983380962653703569.jpg" alt="Producto ATLAS"></div>
+            <div class="masonry-item"><img src="assets/images/4983380962653703570.jpg" alt="Producto ATLAS"></div>
+            <div class="masonry-item"><img src="assets/images/4983380962653703571.jpg" alt="Producto ATLAS"></div>
+            <div class="masonry-item"><img src="assets/images/4983380962653703572.jpg" alt="Producto ATLAS"></div>
+            <div class="masonry-item"><img src="assets/images/4983380962653703573.jpg" alt="Producto ATLAS"></div>
+            <div class="masonry-item"><img src="assets/images/4983380962653703574.jpg" alt="Producto ATLAS"></div>
+            <div class="masonry-item"><img src="assets/images/4983380962653703579.jpg" alt="Producto ATLAS"></div>
+            <div class="masonry-item"><img src="assets/images/4983380962653703581.jpg" alt="Producto ATLAS"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 ATLAS | Pan y Café. Todos los derechos reservados.</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATLAS | Pedidos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .orders-section {
+            min-height: 80vh;
+            padding: 10rem 5% 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(rgba(232, 223, 209, 0.9), rgba(232, 223, 209, 0.9)), url('assets/images/4983380962653703598.jpg') center/cover;
+        }
+        .orders-box {
+            background: var(--c-crema);
+            padding: 4rem;
+            border-radius: 12px;
+            text-align: center;
+            max-width: 600px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+        .orders-box h1 {
+            font-size: 2.5rem;
+            color: var(--c-cafe);
+            margin-bottom: 1rem;
+        }
+        .orders-box p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            color: var(--c-carbon);
+        }
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 1rem 2.5rem;
+            background-color: #25D366;
+            color: white;
+            font-weight: 600;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            transition: all 0.3s ease;
+        }
+        .whatsapp-btn:hover {
+            transform: translateY(-5px);
+            color: white;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo"><img src="assets/logo/logo.png" alt="ATLAS Logo"></a>
+        <div class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="pedidos.html">Pedidos</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+    </nav>
+
+    <section class="orders-section fade-in">
+        <div class="orders-box">
+            <h1>Haz tu Pedido</h1>
+            <p>Llevamos la experiencia ATLAS a tu casa o evento. <br>Comunícate de manera directa y rápida con nuestro equipo de atención a través de WhatsApp para coordinar tu envío.</p>
+            <a href="https://wa.me/5491112345678?text=Hola,%20quiero%20hacer%20un%20pedido." target="_blank" class="whatsapp-btn">
+                <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 ATLAS | Pan y Café. Todos los derechos reservados.</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
